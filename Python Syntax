@@ -1,1 +1,71 @@
-print("Hello, python!")
+文件名：helloworld.py
+命令行执行文件：python helloworld.py
+quit the python command line interface:exit()
+
+分割线-这里开始语法
+
+使用Tab来给代码分优先级
+
+单行注释：
+#This is a comment
+
+多行注释：
+"""
+This is a comment
+written in
+more than just one line
+"""
+
+Variable Names：
+1.（Abc, _）must start with a letter or the underscore character,cannot start with a number
+2. only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+3. case-sensitive (age, Age and AGE are three different variables)
+4. cannot be any of the Python keywords.
+
+Camel Case:
+myVariableName = "John"
+
+Pascal Case:
+MyVariableName = "John"
+
+Creating Variables：
+x = 5   # x is of type int
+y = "John"  # y is now of type string
+y = 'John'  # y is now of type string
+
+print(type(x)) #输出：<class 'int'>
+
+Casting:
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+
+Case-Sensitive：
+a = 4
+A = "Sally"
+#A will not overwrite a
+
+Many Values to Multiple Variables:
+x, y, z = "Orange", "Banana", "Cherry"
+
+One Value to Multiple Variables:
+x = y = z = "Orange"
+
+Unpack a Collection:
+fruits = ["apple", "banana", "cherry"] #单引号是一样的
+x, y, z = fruits
+
+以下三种输出，都输出：Python is awesome
+
+print("Python is awesome") 
+
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z) #如果都是int，会输出和
+
