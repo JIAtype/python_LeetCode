@@ -38,6 +38,8 @@ print(type(x)) #输出：<class 'int'>
 Casting:
 x = str(3)    # x will be '3'
 y = int(3)    # y will be 3
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
 z = float(3)  # z will be 3.0
 
 Case-Sensitive：
@@ -55,6 +57,22 @@ Unpack a Collection:
 fruits = ["apple", "banana", "cherry"] #单引号是一样的
 x, y, z = fruits
 
+#所有数据类型
+x = str("Hello World")	str	
+x = int(20)	int	
+x = float(20.5)	float	
+x = complex(1j)	complex	
+x = list(("apple", "banana", "cherry"))	list	
+x = tuple(("apple", "banana", "cherry"))	tuple	
+x = range(6)	range	
+x = dict(name="John", age=36)	dict	
+x = set(("apple", "banana", "cherry"))	set	
+x = frozenset(("apple", "banana", "cherry"))	frozenset	
+x = bool(5)	bool	
+x = bytes(5)	bytes	
+x = bytearray(5)	bytearray	
+x = memoryview(bytes(5))	memoryview
+
 以下三种输出，都输出：Python is awesome
 
 print("Python is awesome") 
@@ -65,7 +83,52 @@ z = "awesome"
 print(x, y, z)
 
 x = "Python "
-y = "is "
+y = "is" 
 z = "awesome"
 print(x + y + z) #如果都是int，会输出和
 
+输出引号：
+print("It's alright")
+print("He is called 'Johnny'")
+print('He is called "Johnny"')
+输出：
+It's alright
+He is called 'Johnny'
+He is called "Johnny"
+
+多行输出用three double quotes Or three single quotes:
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+输出：
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+
+Global Variables and Local Variables :
+#内部变量和全局变量
+x = "awesome"
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+myfunc()
+print("Python is " + x)
+输出内容：
+Python is fantastic
+Python is awesome
+
+定义一个全局变量
+x = "awesome"
+def myfunc():
+  global x
+  x = "fantastic"
+myfunc()
+print("Python is " + x)
+输出内容：Python is fantastic
+
+#随机数
+import random
+print(random.randrange(1, 10))
