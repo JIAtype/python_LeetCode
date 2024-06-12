@@ -1,0 +1,67 @@
+#单独输出某个位置  ———— H是第0位
+a = "Hello, World!"
+print(a[1])
+#输出：e
+
+#循环输出每一个字母
+for x in "banana":
+  print(x)
+输出：
+b
+a
+n
+a
+n
+a
+
+#String长度
+a = "Hello, World!"
+print(len(a))
+输出：13
+
+#判断String里有某个单词，key word ———— in
+txt = "The best things in life are free!"
+print("free" in txt)
+txt = "The best things in life!"
+print("free" in txt)
+输出：
+True
+False
+
+扩展，用if来试下
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
+输出：
+Yes, 'free' is present.
+
+#判断String里没有某个单词，key word ———— not in
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+输出：
+True
+
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+输出：
+No, 'expensive' is NOT present.
+
+#Slicing  ———— H是第0位
+b = "Hello, World!"
+print(b[2:5])
+输出：
+llo
+
+b = "Hello, World!"
+print(b[:5])
+输出：
+Hello
+
+
+
+
+
+
+
+
