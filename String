@@ -1,3 +1,4 @@
+分割线————以下是输出字符串
 #单独输出某个位置  ———— H是第0位
 a = "Hello, World!"
 print(a[1])
@@ -14,12 +15,13 @@ a
 n
 a
 
-#String长度
+分割线————以下是输出String长度
 a = "Hello, World!"
 print(len(a))
 输出：13
 
-#判断String里有某个单词，key word ———— in
+分割线————以下是判断String里有某个单词
+#key word ———— in
 txt = "The best things in life are free!"
 print("free" in txt)
 txt = "The best things in life!"
@@ -47,21 +49,147 @@ if "expensive" not in txt:
 输出：
 No, 'expensive' is NOT present.
 
+分割线————以下是分割字符串，按位输出
 #Slicing  ———— H是第0位
 b = "Hello, World!"
 print(b[2:5])
 输出：
 llo
 
+#从前往后数，第一位是0号位，输出指定位置之前的所有字符
 b = "Hello, World!"
 print(b[:5])
 输出：
 Hello
 
+#从前往后数，第一位是0号位，输出指定位置之后的所有字符
+b = "Hello, World!"
+print(b[2:])
+输出：
+llo, World!
 
+#负数的时候，从后往前数，最后一位是0号位
+b = "Hello, World!"
+print(b[-5:-2])
+输出：
+orl
 
+分割线————以下是设置字符串的大小写
+#Upper Case
 
+a = "Hello, World!"
+print(a.upper())
+输出：
+HELLO, WORLD!
 
+a = "Hello, World!"
+print(a.lower())
+输出：
+hello, world!
 
+分割线————以下是去除空格Remove Whitespace
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
 
+分割线————以下是replaces a string with another string
+a = "Hello, World!"
+print(a.replace("H", "J"))
 
+分割线————以下是根据符号分割字符串
+string into substrings if it finds instances of the separator
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+
+分割线————以下是合并字符串输出String Format
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
+
+age = 36
+txt = "My name is John, I am " + age
+print(txt)
+
+#key word f
+price = 59
+txt = f"The price is {price} dollars"
+print(txt)
+输出：
+The price is 59 dollars
+
+#Display the price with 2 decimals设置小数点
+price = 59
+txt = f"The price is {price:.2f} dollars"
+print(txt)
+输出：
+The price is 59.00 dollars
+
+#Perform a math operation in the placeholder, and return the result直接输出计算公式
+txt = f"The price is {20 * 59} dollars"
+print(txt)
+
+分割线————以下是输出特殊的字符串
+#Escape Characters
+txt = "We are the so-called \"Vikings\" from the north."    #输出双引号
+
+\'	Single Quote	#单引号
+\\	Backslash	   #反斜杠
+\n	New Line	   换行
+\r	Carriage Return	   回车
+\t	Tab	   制表符
+\b	Backspace	   退格键
+\f	Form Feed	   换页
+\ooo	Octal value	   八进制值
+\xhh	Hex value    十六进制值
+
+分割线————以下是String 方法 Method	Description
+capitalize()	将第一个字符转换为大写Converts the first character to upper case
+casefold()	将字符串转换为小写Converts string into lower case
+center()	返回居中的字符串Returns a centered string
+count()	返回指定值在字符串中出现的次数Returns the number of times a specified value occurs in a string
+encode()	返回字符串的编码版本Returns an encoded version of the string
+endswith()	如果字符串以指定值结尾则返回 trueReturns true if the string ends with the specified value
+expandtabs()	设置字符串的制表符大小Sets the tab size of the string
+find()	在字符串中搜索指定值并返回找到它的位置Searches the string for a specified value and returns the position of where it was found
+format()	格式化字符串中的指定值Formats specified values in a string
+format_map()	格式化字符串中的指定值Formats specified values in a string
+index()	在字符串中搜索指定值并返回找到该值的位置Searches the string for a specified value and returns the position of where it was found
+isalnum()	Returns True if all characters in the string are alphanumeric如果字符串中的所有字符都是字母数字，则返回 True。
+isalpha()	Returns True if all characters in the string are in the alphabet如果字符串中的所有字符都在字母表中，则返回 True。
+isascii()	Returns True if all characters in the string are ascii characters如果字符串中的所有字符都是 ascii 字符，则返回 True。
+isdecimal()	Returns True if all characters in the string are decimals如果字符串中的所有字符都是小数，则返回 True。
+isdigit()	Returns True if all characters in the string are digits如果字符串中的所有字符都是数字，则返回 True。
+isidentifier()	Returns True if the string is an identifier如果字符串是标识符，则返回 True
+islower()	Returns True if all characters in the string are lower case如果字符串中的所有字符均为小写，则返回 True
+isnumeric()	Returns True if all characters in the string are numeric如果字符串中的所有字符都是数字，则返回 True
+isprintable()	Returns True if all characters in the string are printable如果字符串中的所有字符均可打印，则返回 True
+isspace()	Returns True if all characters in the string are whitespaces如果字符串中的所有字符都是空格，则返回 True
+istitle()	Returns True if the string follows the rules of a title如果字符串遵循标题规则，则返回 True
+isupper()	Returns True if all characters in the string are upper case如果字符串中的所有字符均为大写，则返回 True
+join()	将可迭代的元素连接到字符串的末尾Joins the elements of an iterable to the end of the string
+ljust()	返回字符串的左对齐版本Returns a left justified version of the string
+lower()	将字符串转换为小写Converts a string into lower case
+lstrip()	返回字符串的左修剪版本Returns a left trim version of the string
+maketrans()	返回要在翻译中使用的翻译表Returns a translation table to be used in translations
+partition()	返回一个元组，其中字符串分为三部分Returns a tuple where the string is parted into three parts
+replace()	返回一个字符串，其中指定值替换为指定值Returns a string where a specified value is replaced with a specified value
+rfind()	在字符串中搜索指定值并返回找到它的最后位置Searches the string for a specified value and returns the last position of where it was found
+rindex()	在字符串中搜索指定值并返回找到该值的最后位置Searches the string for a specified value and returns the last position of where it was found
+rjust()	返回字符串的右对齐版本Returns a right justified version of the string
+rpartition()	返回一个元组，其中字符串分为三部分Returns a tuple where the string is parted into three parts
+rsplit()	在指定分隔符处分割字符串，并返回一个列表Splits the string at the specified separator, and returns a list
+rstrip()	返回字符串的右修剪版本Returns a right trim version of the string
+split()	在指定分隔符处分割字符串，并返回一个列表Splits the string at the specified separator, and returns a list
+splitlines()	换行符处分割字符串并返回一个列表Splits the string at line breaks and returns a list
+startswith()	Returns true if the string starts with the specified value如果字符串以指定值开头则返回 true
+strip()	返回字符串的修剪版本Returns a trimmed version of the string
+swapcase()	交换大小写，小写变为大写，反之亦然Swaps cases, lower case becomes upper case and vice versa
+title()	将每个单词的第一个字符转换为大写Converts the first character of each word to upper case
+translate()	返回翻译后的字符串Returns a translated string
+upper()	将字符串转换为大写Converts a string into upper case
+zfill()	在字符串开头填充指定数量的 0 值Fills the string with a specified number of 0 values at the beginning
