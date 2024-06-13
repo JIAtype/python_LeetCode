@@ -1,0 +1,45 @@
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+输出：
+True
+False
+False
+
+
+print(bool("Hello"))
+print(bool(15))
+#除了空和0，直接用bool的结果都是true
+#such as (), [], {}, "", the number 0, and the value None. And of course the value False evaluates to False.
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
+#定义一个返回true的方法Functions can Return a Boolean
+def myFunction() :
+  return True
+print(myFunction())
+
+#Print "YES!" if the function returns True, otherwise print "NO!":
+def myFunction() :
+  return True
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+
+#Python also has many built-in functions that return a boolean value
+
+
+
+
+
+
+
+
+
+
